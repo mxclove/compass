@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="detailCell" customModule="毕业设计_指南针" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49T-2O-TzG">
+                        <rect key="frame" x="20" y="11" width="190" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="190" id="38H-SP-QoD"/>
+                            <constraint firstAttribute="width" constant="190" id="YPg-Xr-BlD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adsmogo_button_right_default" translatesAutoresizingMaskIntoConstraints="NO" id="5d9-it-uVC">
+                        <rect key="frame" x="715" y="4" width="53" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="ntI-Y2-Znw"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="49T-2O-TzG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="22g-jA-qQC"/>
+                    <constraint firstItem="5d9-it-uVC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="9Q6-kH-OXn"/>
+                    <constraint firstAttribute="bottom" secondItem="49T-2O-TzG" secondAttribute="bottom" constant="11" id="CaU-nO-a9g"/>
+                    <constraint firstItem="49T-2O-TzG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="R3e-9p-F96"/>
+                    <constraint firstAttribute="bottom" secondItem="5d9-it-uVC" secondAttribute="bottom" constant="4" id="RnQ-uM-SzC"/>
+                    <constraint firstAttribute="trailing" secondItem="5d9-it-uVC" secondAttribute="trailing" id="Sre-Y4-wgZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="49T-2O-TzG" id="ofx-Z7-wJM"/>
+                <outlet property="rightLabel" destination="5d9-it-uVC" id="aKD-Bw-v6U"/>
+            </connections>
+            <point key="canvasLocation" x="440" y="361"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="adsmogo_button_right_default" width="76" height="54"/>
+    </resources>
+</document>
