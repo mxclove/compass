@@ -23,7 +23,7 @@ protocol MapViewControllerDelegate {
 class MapViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDelegate, SwitchCellMapDelegate {
 
     var map = MKMapView()
-//    var locationManager = CLLocationManager()
+    var locationManager = CLLocationManager()
     var longitudeLabel = UILabel()
     var latitudeLabel = UILabel()
     var addressLabel = UILabel()
@@ -131,10 +131,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDe
 //        self.view.addSubview(messageLabel)
         self.view.addSubview(getUserLocationBTn)
         
-//        locationManager.delegate = self
+        locationManager.delegate = self
         
-//        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
-//        locationManager.startUpdatingLocation()
+        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        locationManager.startUpdatingLocation()
 
         
     }
